@@ -18,10 +18,14 @@ let result = '';
 for (let i = 1; i <= 100; i++) {
     result += `${i} `
     // inserire condizioni per FIZZ/BUZZ
-    if ('') {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        result += 'fizzbuzz'
 
     } else if (i % 3 === 0) {
         result += 'fizz'
+
+    } else if (i % 5 === 0) {
+        result += 'buzz'
 
     }
 
@@ -29,4 +33,4 @@ for (let i = 1; i <= 100; i++) {
 }
 
 console.log(`numeri a fine ciclo: `, result);
-resultElement.innerHTML = result;
+// resultElement.innerHTML = result;
