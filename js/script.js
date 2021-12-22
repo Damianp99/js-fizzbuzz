@@ -11,17 +11,22 @@ ANALISI TRACCIA:
 4-Per multipli di 3 che di 5 inserire FIZZBUZZ
 */
 
-const numElement = document.getElementById('numbers');
+const resultElement = document.getElementById('numbers');
 
-let num = '';
+let result = '';
 
 for (let i = 1; i <= 100; i++) {
-    num += `${i} `
+    result += `${i} `
     // inserire condizioni per FIZZ/BUZZ
+    if ('') {
+
+    } else if (i % 3 === 0) {
+        result += 'fizz'
+
+    }
 
 
 }
 
-console.log(`numeri a fine ciclo: `, num);
-
-numElement.innerHTML = num;
+console.log(`numeri a fine ciclo: `, result);
+resultElement.innerHTML = result;
